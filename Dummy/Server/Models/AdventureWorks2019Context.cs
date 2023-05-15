@@ -2,11 +2,12 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dummy.Server.Models;
 
-public partial class AdventureWorks2019Context : DbContext
+public partial class AdventureWorks2019Context : IdentityDbContext
 {
     public AdventureWorks2019Context()
     {
